@@ -1,0 +1,7 @@
+1. El lenguaje del ejemplo sirve para dar color al texto
+
+2. Las etiquetas usadas son: 
+<#>...</#> que da color Azul al texto
+y <%>...</%> que da color Rojo al texto
+
+3. Este lenguaje está orientado a la presentación y es del tipo descriptivo semántico ya que indica con los signos # y % el color (formato) que debe tener el texto incluido en cada marca al ser impreso en navegador/terminal.
