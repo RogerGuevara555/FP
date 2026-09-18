@@ -1,0 +1,4 @@
+2	50687452Y 	José Luis	García		Viñals		667859621
+4	09653801B 	Ruth		Lázaro		Cardenal	689330247
+3	38546998X 	Javier		Peinado		Martín		666932541
+1	00789521T 	Paula		Sanz		González	619554687

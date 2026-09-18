@@ -1,0 +1,22 @@
+Juan    Pérez      Calle Mayor 15               Madrid     +34 600 123 456
+María   Gómez      Avenida de América 42        Barcelona  +34 611 234 567
+Carlos  López      Paseo de la Castellana 80    Madrid     +34 622 345 678
+Ana     Martínez   Calle San Fernando 12        Sevilla    +34 633 456 789
+Luis    Rodríguez  Gran Vía 28                  Valencia   +34 644 567 890
+Elena   Fernández  Calle Larios 5               Málaga     +34 655 678 901
+David   González   Calle Real 9                 Zaragoza   +34 666 789 012
+Laura   Sánchez    Avenida Constitución 33      Granada    +34 677 890 123
+Javier  Ramírez    Calle Mayor 4                Bilbao     +34 688 901 234
+Sofía   Torres     Paseo Marítimo 11            Alicante   +34 699 012 345
+
+
+/*
+Número de caracteres para cada campo:
+Nombre:8
+Apellido:11
+Dirección:29
+Ciudad:11
+Teléfono:15
+
+He elegido los números de caracteres dichos arriba para cada dato ya que representan un poco más de la longitud más larga de las cadenas de caracteres más largas de los registros de cada campo
+*/
