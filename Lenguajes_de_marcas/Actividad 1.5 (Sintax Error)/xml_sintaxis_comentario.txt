@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mailbox>
+	<mail>
+		<to>Tove</to>
+		<from>Jani<from>           //AQUI FALTA EL "/" EN <from>
+		<heading>Reminder</heading>
+		<body>Don't forget me this weekend!</body> 
+		 //EN Don't, EL (') DEBE REPRESENTARSE COMO UNA ENTIDAD
+	</mail>
+	<mail>
+		<to>Jani</to>
+		<from>Tove</from>
+		<heading>Re: Reminder</heading>
+		<bodys>Yes, of course!</body> 
+		 //AQUÍ EL INICIO NO COINCIDE CON EL CIERRE <bodys>...</body>
+	</mail>
+</mailbox>

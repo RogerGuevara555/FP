@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+   <book id="bk101">
+      <author>Gambardella, Matthew</author>
+      <title>XML Developer's Guide</title>
+      <genre>Computer</genre>
+      <price>44.95</price>
+      <publish_date>2000-10-01</publish_date>
+      <description>An in-depth look at creating applications 
+      with XML.</description>
+   </book>
+   <book id="bk102">
+      <author>Ralls, Kim</author>
+      <title>Midnight Rain</title>
+      <genre>Fantasy</genre>
+      <price>5.95</price>
+      <publish_date>2000-12-16</publish_date>
+      <description>A former architect battles corporate zombies, 
+      an evil sorceress, and her own childhood to become queen 
+      of the world.</description>
+   </book>
+   <book id="bk103">
+      <author>Isaac Asimov</author>
+      <title>Sol Desnudo</title>
+      <genre>Ciencia Ficcion</genre>
+      <price>6.46</price>
+      <publish_date>1956</publish_date>
+      <description>Un segundo viaje detectivezco hacia otro planeta 
+      trae una sociedad muy particular y con varios gatos 
+      encerrados hacia Elijah Baley y su compañero robótico R. Daneel Olivaw, 
+      quienes desentrañarán un positrónico misterio.</description>
+   </book>
+</catalog>

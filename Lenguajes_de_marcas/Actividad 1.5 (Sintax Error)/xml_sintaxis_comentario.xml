@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mailbox>
+	<mail>
+		<to>Tove</to>
+		<from>Jani</from>           
+		<heading>Reminder</heading>
+		<body>Dont forget me this weekend!</body> 
+	</mail>
+	<mail>
+		<to>Jani</to>
+		<from>Tove</from>
+		<heading>Re: Reminder</heading>
+		<body>Yes, of course!</body>
+	</mail>
+</mailbox>
