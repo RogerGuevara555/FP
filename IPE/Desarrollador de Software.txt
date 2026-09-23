@@ -1,0 +1,20 @@
+		Desarrollador de Software
+
+		--Competencias Blandas--
+· Desarrollar y mantener soluciones de software de acuerdo con los requerimientos técnicos del cliente. (etapas 1 y 2)
+· Construir, modificar y mantener aplicaciones, participando en la resolución de incidencias operativas. (etapas 3 y 4)
+· Realizar pruebas unitarias y participar en revisiones de código (Code Review). (etapas 5 y 6)
+
+		--Competencias Técnicas--
+· Dominio de diversos lenguajes de programación en función del tipo de proyecto (Python, Java, C#)
+· Capacidad de diseño y gestión de Bases de Datos con herramientas variadas (MySQL, Oracle, SQLite)
+· Uso eficiente del control de versiones (con Git) para el trabajo colaborativo y el resguardo del código fuente del proyecto en plataformas globales ante posibles pérdidas (GitHub, GitLab)
+· Posesión de criterio sobre algoritmos, patrones de diseño y estructura de sistemas para el desarrollo a gran escala.
+· Uso eficiente de agentes de Inteligencia Artificial para agilizar el desarrollo (ClaudeCode, Kimi K3)
+· Buen nivel de inglés técnico para comprender al detalle la documentación online de cualquier software.
+
+
+	    --Competencias Sociales/Personales--
+· Saber trabajar en equipo. Es fundamental ya que las empresas siempre organizan un equipo completo para cada proyecto, por lo que la comunicación adecuada es imprescindible.
+· Aprender rápido. En un sector en constante evolución y cambio, saber adaptarse bien a las nuevas tecnologías es fundamental para no quedarse atrás. 
+· Proponer soluciones creativas. Antes y durante el desarrollo es común encontrarse problemáticas muy técnicas que no necesariamente están resueltas en internet. 
