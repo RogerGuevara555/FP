@@ -37,22 +37,23 @@ public class EjerciciosElementosJavaMon {
     //   boolean: true
     //   ...
     // -------------------------------------------------------------------------
+    byte numeroMuyCorto = 1;
+    short numeroCorto = 10;
     int numero = 14;
-    double decimalLargo = 3.1413;
-    boolean estaLloviendo = false;
-    char letra = 'r';
     long enteroLargo = 120000000;
     float decimal = 2.71f;
-    byte numeroMuyCorto = 100;
-    short numeroCorto = 10;
-    System.err.println(numero + " int");
-    System.err.println(decimalLargo + " double");
-    System.err.println(estaLloviendo + " boolean");
-    System.err.println(letra + " char");
-    System.err.println(enteroLargo + " long");
-    System.err.println(decimal + " float");
-    System.err.println(numeroMuyCorto + " byte");
-    System.err.println(numeroCorto + " short");
+    double decimalLargo = 3.1413;
+    char letra = 'r';
+    boolean estaLloviendo = false;
+    //System.err.println(numeroMuyCorto + " byte");
+    //System.err.println(numeroCorto + " short");
+    //System.err.println(numero + " int");
+    //System.err.println(enteroLargo + " long");
+    //System.err.println(decimal + " float");
+    //System.err.println(decimalLargo + " double");
+    //System.err.println(letra + " char");
+    //System.err.println(estaLloviendo + " boolean");
+    //System.out.println();
 
     
 
@@ -69,7 +70,16 @@ public class EjerciciosElementosJavaMon {
     // Comenta esa línea y explica el error en un comentario de línea.
     // -------------------------------------------------------------------------
 
+    final double PI = 3.141592653589793;
+    final int MESES_DEL_AÑO = 12;
+    final int VELOCIDAD_LIMITE = 120;
 
+    // MESES_DEL_AÑO = 13; las constantes no pueden ser reasignadas
+
+    //System.out.println(PI);
+    //System.out.println(MESES_DEL_AÑO);
+    //System.out.println(VELOCIDAD_LIMITE);
+    //System.out.println();
 
     // -------------------------------------------------------------------------
     // EJERCICIO 03 — Rango de tipos numéricos
@@ -105,7 +115,7 @@ public class EjerciciosElementosJavaMon {
     // Declara un entero usando notación hexadecimal  (ejemplo: 0xFF)
     // Declara otro entero usando notación octal       (ejemplo: 017)
     // Declara otro entero usando notación binaria     (ejemplo: 0b1010)
-    // Muéstralos en decimal con System.out.println().
+    // Muéstralos en decimal con //System.out.println().
     //
     // Después, declara variables char con los caracteres de escape:
     //   '\n'  '\t'  '\\'  '\''  '\"'
@@ -122,7 +132,7 @@ public class EjerciciosElementosJavaMon {
     // de distintos tipos (entero, decimal, texto, booleano, char).
     //
     // Para cada una, muestra el tipo inferido así:
-    //   System.out.println(miVariable.getClass().getSimpleName());
+    //   //System.out.println(miVariable.getClass().getSimpleName());
     // (Nota: getClass() no funciona con tipos primitivos; var los infiere
     //  como tipos primitivos, así que úsalo con tipos de referencia o
     //  comenta qué tipo esperarías en cada caso.)
@@ -178,8 +188,8 @@ public class EjerciciosElementosJavaMon {
     // -------------------------------------------------------------------------
     // Declara una variable entera i = 5.
     // Demuestra la diferencia entre i++ y ++i:
-    //   - Muestra el valor que se imprime al hacer: System.out.println(i++)
-    //   - Muestra el valor que se imprime al hacer: System.out.println(++i)
+    //   - Muestra el valor que se imprime al hacer: //System.out.println(i++)
+    //   - Muestra el valor que se imprime al hacer: //System.out.println(++i)
     //
     // Crea un ejemplo propio donde el orden importa en una expresión:
     //   int a = 3;
@@ -189,6 +199,18 @@ public class EjerciciosElementosJavaMon {
     // ese valor en un comentario.
     // -------------------------------------------------------------------------
 
+    int i = 5;
+    //System.out.println(i++);
+    //System.out.println(++i);
+
+    int a = 3;
+    int b = a++ * 2;
+    int c = ++a * 2;
+
+    //System.out.println(a);
+    //System.out.println(b);
+    //System.out.println(c);
+    //System.out.println();
 
     // -------------------------------------------------------------------------
     // EJERCICIO 10 — Operadores de asignación compuesta
@@ -207,6 +229,18 @@ public class EjerciciosElementosJavaMon {
     //   ...
     // -------------------------------------------------------------------------
 
+    int x = 100;
+    x += 50; // 150
+    //System.out.println(x);
+    x -= 30; // 120
+    //System.out.println(x);
+    x *= 2;  // 240
+    //System.out.println(x);
+    x /= 4;  // 60
+    //System.out.println(x);
+    x %= 7;  // 4
+    //System.out.println(x);
+    //System.out.println();
 
     // -------------------------------------------------------------------------
     // EJERCICIO 11 — Operadores relacionales y lógicos
@@ -225,6 +259,20 @@ public class EjerciciosElementosJavaMon {
     // por qué el compilador lo evalúa así.
     // -------------------------------------------------------------------------
 
+    a = 5;
+    b = 10;
+    c = 5;
+
+    //System.out.println(a == c);  // true
+    //System.out.println(a != b);  // true
+    //System.out.println(a > 0 && b < 20);  // true
+    //System.out.println(!(a == b));  // true
+  
+    //System.out.println(!(a == b) || a > 0 && b < 20);  // true
+    //System.out.println(!(!(5 < b || b < 20)));  // true
+    //System.out.println(a+c >= 2*a);  // true
+    //System.out.println(50 <= 10*c);  // true
+    //System.out.println(b==b && c>=a+1);  // false
 
     // -------------------------------------------------------------------------
     // EJERCICIO 12 — Operador ternario
@@ -280,7 +328,27 @@ public class EjerciciosElementosJavaMon {
     // diferente al original. Muestra ambos resultados.
     // -------------------------------------------------------------------------
 
-
+    int r1 = 2 + 3 * 4;                    // predicción: 14
+    int r2 = 10 / 2 + 3 * 2 - 1;           // predicción: 10
+    boolean r3 = true || false && false;    // predicción: true
+    boolean r4 = 8 > 3 + 4;                // predicción: true
+    
+    //System.out.println(r1);
+    //System.out.println(r2);
+    //System.out.println(r3);
+    //System.out.println(r4);
+    //System.out.println();
+    
+    r1 = (2 + 3) * 4;                    // predicción: 20
+    r2 = 10 / (2 + 3) * (2 - 1);           // predicción: 2
+    r3 = (true || false) && false;    // predicción: false
+    r4 = (8 > ((3) + (4)));                // predicción: true
+    
+    //System.out.println(r1);
+    //System.out.println(r2);
+    //System.out.println(r3);
+    //System.out.println(r4);
+    //System.out.println();
 
     // =========================================================================
     // BLOQUE 3 — SINTAXIS Y ESTRUCTURA (ejercicios 15 al 19)
@@ -339,8 +407,19 @@ public class EjerciciosElementosJavaMon {
     // Reglas a aplicar: camelCase para variables, UPPER_SNAKE_CASE para
     // constantes, PascalCase para clases.
     // -------------------------------------------------------------------------
-
-
+    
+    //int Edad
+    //final double pi_value = 3.14
+    //String nombre_Completo = "Ana"
+    //class miclase { }         (solo como comentario, no la declares aquí)
+    //int MAX_intentos = 3
+    
+    int edad; // en camelCase 
+    final double PI_VALUE = 3.14; // en UPPER_SNAKE_CASE
+    String nombreCompleto = "Ana"; // en camelCase
+    //class MiClase { }     en PascalCase
+    final int MAX_INTENTOS = 3;
+    
 
     // -------------------------------------------------------------------------
     // EJERCICIO 18 — Delimitadores y bloques de código
@@ -397,6 +476,18 @@ public class EjerciciosElementosJavaMon {
     // sumar un int y un double? Usa getClass() o razona con un comentario.
     // -------------------------------------------------------------------------
 
+    byte num = 42;
+    short num2 = num;
+    int num3 = num2;
+    long num4 = num3;
+    float num5 = num4;
+    double num6 = num5;
+
+    System.out.println(num2);
+    System.out.println(num3);
+    System.out.println(num4);
+    System.out.println(num5);
+    System.out.println(num6);
 
     // -------------------------------------------------------------------------
     // EJERCICIO 21 — Casting explícito (narrowing) y pérdida de datos
