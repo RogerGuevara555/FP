@@ -513,20 +513,20 @@ public class EjerciciosElementosJavaMon {
     // -------------------------------------------------------------------------
 
     double d = 9.99;
-    System.out.println((int) d); // se trunca, (int) d = 9
+    //System.out.println((int) d); // se trunca, (int) d = 9
 
     int grande = 130;
-    System.out.println((byte) grande);
+    //System.out.println((byte) grande);
 
     char a1 = 'A', a2 = 'a', a3 = '0';
-    System.out.println((int) a1); // 65
-    System.out.println((int) a2); // 97
-    System.out.println((int) a3); // 48
+    //System.out.println((int) a1); // 65
+    //System.out.println((int) a2); // 97
+    //System.out.println((int) a3); // 48
     
     int b1 = 65, b2 = 90, b3 = 48;
-    System.out.println((char) b1); // A
-    System.out.println((char) b2); // Z
-    System.out.println((char) b3); // 0
+    //System.out.println((char) b1); // A
+    //System.out.println((char) b2); // Z
+    //System.out.println((char) b3); // 0
     
         // -------------------------------------------------------------------------
     // EJERCICIO 22 — Conversión entre String y tipos primitivos
