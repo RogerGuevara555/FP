@@ -1,4 +1,4 @@
-/**
+/*
  * EJERCICIOS — ELEMENTOS DEL LENGUAJE JAVA
  * Unidad: Sintaxis, operadores, variables, delimitadores y tipos de datos
  * Módulo: Programación — 1º DAM
@@ -71,7 +71,7 @@ public class EjerciciosElementosJavaMon {
     // -------------------------------------------------------------------------
 
     final double PI = 3.141592653589793;
-    final int MESES_DEL_AÑO = 12;
+    final int MESES_DEL_ANO = 12;
     final int VELOCIDAD_LIMITE = 120;
 
     // MESES_DEL_AÑO = 13; las constantes no pueden ser reasignadas
@@ -483,11 +483,14 @@ public class EjerciciosElementosJavaMon {
     float num5 = num4;
     double num6 = num5;
 
+    
+    /*
     System.out.println(num2);
     System.out.println(num3);
     System.out.println(num4);
     System.out.println(num5);
     System.out.println(num6);
+    */
 
     // -------------------------------------------------------------------------
     // EJERCICIO 21 — Casting explícito (narrowing) y pérdida de datos
@@ -509,8 +512,23 @@ public class EjerciciosElementosJavaMon {
     // Para cada caso, escribe un comentario que explique la pérdida de datos.
     // -------------------------------------------------------------------------
 
+    double d = 9.99;
+    System.out.println((int) d); // se trunca, (int) d = 9
 
-    // -------------------------------------------------------------------------
+    int grande = 130;
+    System.out.println((byte) grande);
+
+    char a1 = 'A', a2 = 'a', a3 = '0';
+    System.out.println((int) a1); // 65
+    System.out.println((int) a2); // 97
+    System.out.println((int) a3); // 48
+    
+    int b1 = 65, b2 = 90, b3 = 48;
+    System.out.println((char) b1); // A
+    System.out.println((char) b2); // Z
+    System.out.println((char) b3); // 0
+    
+        // -------------------------------------------------------------------------
     // EJERCICIO 22 — Conversión entre String y tipos primitivos
     // -------------------------------------------------------------------------
     // PARTE A — De String a tipo primitivo (parsing):
