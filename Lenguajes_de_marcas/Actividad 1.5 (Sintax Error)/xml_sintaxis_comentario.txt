@@ -6,7 +6,7 @@
                 <!-- AQUI FALTA EL "/" EN <from> -->
 		<heading>Reminder</heading>
 		<body>Don't forget me this weekend!</body> 
-		 //EN Don't, EL (') DEBE REPRESENTARSE COMO UNA ENTIDAD
+		<!-- EN Don't, EL (') DEBE REPRESENTARSE COMO UNA ENTIDAD (Don&apos;t ) -->
 	</mail>
 	<mail>
 		<to>Jani</to>

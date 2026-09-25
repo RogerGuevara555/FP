@@ -1,34 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<cvs>
+<curriculums>
 
-  <cvEuropass >
+
+  <cvEuropass>
 
     <datos_personales>
-      <nombre>Roger Andrés</nombre>
+      <nombre>Roger</nombre>
       <apellidos>Guevara Troche</apellidos>
       <nacionalidad>Cubana</nacionalidad>
       <domicilio>Alcobendas</domicilio>
       <contacto>
         <correo>rogerandres555@gmail.com</correo>
-        <telefono>+34 614-659-509</telefono>
+        <telefono>(+34) 614-659-509</telefono>
       </contacto>
     </datos_personales>
 
-    <body>
-      <sobreMi>Estudiante de informática con gran pasión por
-      la programación y dispuesto a entrar un sector en constante 
-      cambio.</sobreMi>
-      <formacion>Bachillerato, Desarrollo de Aplicaciones 
-      Multiplataforma (en curso)</formacion>
-      <tecnologias>Java, Python, Git, VSCode</tecnologias>
-      <idiomas>Español Nativo, Inglés B1</idiomas>
-    </body>
+    <descripcion>
+      Estudiante de informatica con gran pasion por la programacion y dispuesto a entrar un sector en constante cambio.
+    </descripcion>
+
+    <experiencia_laboral>
+      <!-- Añadir cuando tenga experiancia. -->
+    </experiencia_laboral>
+
+    <tecnologias>
+      <tecnologia nivel="avanzado">Java</tecnologia>
+      <tecnologia nivel="avanzado">Python</tecnologia>
+      <tecnologia nivel="intermedio">Git</tecnologia>
+      <tecnologia nivel="basico">VSCode</tecnologia>
+    </tecnologias>
+
+    <formacion>
+      <curso inicio="2023-09" fin="2025-06">
+        <titulacion>Bachillerato</titulacion>
+        <centro>IPVCE Vladimir Ilich Lenin</centro>
+      </curso>
+      <curso inicio="2026-09" actual="true">
+        <titulacion>Grado Superior en DAM</titulacion>
+        <centro>IES Virgen de la Paz</centro>
+      </curso>
+    </formacion>
+
+    <idiomas>
+      <idioma nivel="C2">Español</idioma>
+      <idioma nivel="B1">Inglés</idioma>
+    </idiomas>
 
   </cvEuropass>
 
-  <cvEuropass>
-    <!-- Poner mas CVs aquí -->
-  </cvEuropass>
 
-</cvs>
+</curriculums>
+
+
