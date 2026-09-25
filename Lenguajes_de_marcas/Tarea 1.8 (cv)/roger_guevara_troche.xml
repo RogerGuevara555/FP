@@ -1,17 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <cvs>
 
-  <cvEuropass>
-    <head>
-      <nombre>Roger Andrés Guevara Troche</nombre>
+  <cvEuropass >
+
+    <datos_personales>
+      <nombre>Roger Andrés</nombre>
+      <apellidos>Guevara Troche</apellidos>
       <nacionalidad>Cubana</nacionalidad>
-    </head>
-    <contacto>
       <domicilio>Alcobendas</domicilio>
-      <telefono>+34 614 659 509</telefono>
-      <correo>rogerandres555@gmail.com</correo>
-    </contacto>
+      <contacto>
+        <correo>rogerandres555@gmail.com</correo>
+        <telefono>+34 614-659-509</telefono>
+      </contacto>
+    </datos_personales>
+
     <body>
       <sobreMi>Estudiante de informática con gran pasión por
       la programación y dispuesto a entrar un sector en constante 
@@ -21,6 +24,7 @@
       <tecnologias>Java, Python, Git, VSCode</tecnologias>
       <idiomas>Español Nativo, Inglés B1</idiomas>
     </body>
+
   </cvEuropass>
 
   <cvEuropass>
