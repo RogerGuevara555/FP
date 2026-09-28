@@ -3,7 +3,7 @@
 <curriculums>
 
 
-  <cvEuropass>
+  <cvEuropass id="cv-1">
 
     <datos_personales>
       <nombre>Roger</nombre>
@@ -28,7 +28,7 @@
       <tecnologia nivel="avanzado">Java</tecnologia>
       <tecnologia nivel="avanzado">Python</tecnologia>
       <tecnologia nivel="intermedio">Git</tecnologia>
-      <tecnologia nivel="basico">VSCode</tecnologia>
+      <tecnologia nivel="basico">SQLite</tecnologia>
     </tecnologias>
 
     <formacion>
