@@ -18,7 +18,8 @@
 public class EjerciciosElementosJavaMon {
 
     public static void main(String[] args) {
-
+    
+    }
        // =========================================================================
     // BLOQUE 1 — VARIABLES Y TIPOS DE DATOS (ejercicios 01 al 07)
     // =========================================================================
@@ -37,23 +38,26 @@ public class EjerciciosElementosJavaMon {
     //   boolean: true
     //   ...
     // -------------------------------------------------------------------------
-    byte numeroMuyCorto = 1;
-    short numeroCorto = 10;
-    int numero = 14;
-    long enteroLargo = 120000000;
-    float decimal = 2.71f;
-    double decimalLargo = 3.1413;
-    char letra = 'r';
-    boolean estaLloviendo = false;
-    //System.err.println(numeroMuyCorto + " byte");
-    //System.err.println(numeroCorto + " short");
-    //System.err.println(numero + " int");
-    //System.err.println(enteroLargo + " long");
-    //System.err.println(decimal + " float");
-    //System.err.println(decimalLargo + " double");
-    //System.err.println(letra + " char");
-    //System.err.println(estaLloviendo + " boolean");
-    //System.out.println();
+
+    public static void ej1 () {
+        byte numeroMuyCorto = 1;
+        short numeroCorto = 10;
+        int numero = 14;
+        long enteroLargo = 120000000;
+        float decimal = 2.71f;
+        double decimalLargo = 3.1413;
+        char letra = 'r';
+        boolean estaLloviendo = false;
+        
+        System.err.println(numeroMuyCorto + " byte");
+        System.err.println(numeroCorto + " short");
+        System.err.println(numero + " int");
+        System.err.println(enteroLargo + " long");
+        System.err.println(decimal + " float");
+        System.err.println(decimalLargo + " double");
+        System.err.println(letra + " char");
+        System.err.println(estaLloviendo + " boolean");
+    }
 
     
 
@@ -70,16 +74,16 @@ public class EjerciciosElementosJavaMon {
     // Comenta esa línea y explica el error en un comentario de línea.
     // -------------------------------------------------------------------------
 
-    final double PI = 3.141592653589793;
-    final int MESES_DEL_ANO = 12;
-    final int VELOCIDAD_LIMITE = 120;
+    public static void ej2 () {
+        final double PI = 3.141592653589793;
+        final int MESES_DEL_ANO = 12;
+        final int VELOCIDAD_LIMITE = 120;
+        final int MESES_DEL_AÑO = 13; //las constantes no pueden ser reasignadas
 
-    // MESES_DEL_AÑO = 13; las constantes no pueden ser reasignadas
-
-    //System.out.println(PI);
-    //System.out.println(MESES_DEL_AÑO);
-    //System.out.println(VELOCIDAD_LIMITE);
-    //System.out.println();
+        System.out.println(PI);
+        System.out.println(MESES_DEL_AÑO);
+        System.out.println(VELOCIDAD_LIMITE);
+    }
 
     // -------------------------------------------------------------------------
     // EJERCICIO 03 — Rango de tipos numéricos
@@ -199,18 +203,20 @@ public class EjerciciosElementosJavaMon {
     // ese valor en un comentario.
     // -------------------------------------------------------------------------
 
+    public static void ej9 () {
     int i = 5;
-    //System.out.println(i++);
-    //System.out.println(++i);
+    System.out.println(i++);
+    System.out.println(++i);
 
     int a = 3;
     int b = a++ * 2;
     int c = ++a * 2;
 
-    //System.out.println(a);
-    //System.out.println(b);
-    //System.out.println(c);
-    //System.out.println();
+    System.out.println(a);
+    System.out.println(b);
+    System.out.println(c);
+    }
+
 
     // -------------------------------------------------------------------------
     // EJERCICIO 10 — Operadores de asignación compuesta
@@ -229,19 +235,20 @@ public class EjerciciosElementosJavaMon {
     //   ...
     // -------------------------------------------------------------------------
 
-    int x = 100;
-    x += 50; // 150
-    //System.out.println(x);
-    x -= 30; // 120
-    //System.out.println(x);
-    x *= 2;  // 240
-    //System.out.println(x);
-    x /= 4;  // 60
-    //System.out.println(x);
-    x %= 7;  // 4
-    //System.out.println(x);
-    //System.out.println();
-
+    public static void ej10 () {
+        int x = 100;
+        x += 50; // 150
+        System.out.println(x);
+        x -= 30; // 120
+        System.out.println(x);
+        x *= 2;  // 240
+        System.out.println(x);
+        x /= 4;  // 60
+        System.out.println(x);
+        x %= 7;  // 4
+        System.out.println(x);
+    }
+    
     // -------------------------------------------------------------------------
     // EJERCICIO 11 — Operadores relacionales y lógicos
     // -------------------------------------------------------------------------
@@ -259,20 +266,22 @@ public class EjerciciosElementosJavaMon {
     // por qué el compilador lo evalúa así.
     // -------------------------------------------------------------------------
 
-    a = 5;
-    b = 10;
-    c = 5;
+    public static void ej11 () {
+    int a = 5;
+    int b = 10;
+    int c = 5;
 
-    //System.out.println(a == c);  // true
-    //System.out.println(a != b);  // true
-    //System.out.println(a > 0 && b < 20);  // true
-    //System.out.println(!(a == b));  // true
+    System.out.println(a == c);  // true
+    System.out.println(a != b);  // true
+    System.out.println(a > 0 && b < 20);  // true
+    System.out.println(!(a == b));  // true
   
-    //System.out.println(!(a == b) || a > 0 && b < 20);  // true
-    //System.out.println(!(!(5 < b || b < 20)));  // true
-    //System.out.println(a+c >= 2*a);  // true
-    //System.out.println(50 <= 10*c);  // true
-    //System.out.println(b==b && c>=a+1);  // false
+    System.out.println(!(a == b) || a > 0 && b < 20);  // true
+    System.out.println(!(!(5 < b || b < 20)));  // true
+    System.out.println(a+c >= 2*a);  // true
+    System.out.println(50 <= 10*c);  // true
+    System.out.println(b==b && c>=a+1);  // false
+    }
 
     // -------------------------------------------------------------------------
     // EJERCICIO 12 — Operador ternario
@@ -328,27 +337,28 @@ public class EjerciciosElementosJavaMon {
     // diferente al original. Muestra ambos resultados.
     // -------------------------------------------------------------------------
 
-    int r1 = 2 + 3 * 4;                    // predicción: 14
-    int r2 = 10 / 2 + 3 * 2 - 1;           // predicción: 10
-    boolean r3 = true || false && false;    // predicción: true
-    boolean r4 = 8 > 3 + 4;                // predicción: true
-    
-    //System.out.println(r1);
-    //System.out.println(r2);
-    //System.out.println(r3);
-    //System.out.println(r4);
-    //System.out.println();
-    
-    r1 = (2 + 3) * 4;                    // predicción: 20
-    r2 = 10 / (2 + 3) * (2 - 1);           // predicción: 2
-    r3 = (true || false) && false;    // predicción: false
-    r4 = (8 > ((3) + (4)));                // predicción: true
-    
-    //System.out.println(r1);
-    //System.out.println(r2);
-    //System.out.println(r3);
-    //System.out.println(r4);
-    //System.out.println();
+    public static void ej14 () {
+        int r1 = 2 + 3 * 4;                    // predicción: 14
+        int r2 = 10 / 2 + 3 * 2 - 1;           // predicción: 10
+        boolean r3 = true || false && false;    // predicción: true
+        boolean r4 = 8 > 3 + 4;                // predicción: true
+        
+        System.out.println(r1);
+        System.out.println(r2);
+        System.out.println(r3);
+        System.out.println(r4);
+        
+        r1 = (2 + 3) * 4;                    // predicción: 20
+        r2 = 10 / (2 + 3) * (2 - 1);           // predicción: 2
+        r3 = (true || false) && false;    // predicción: false
+        r4 = (8 > ((3) + (4)));                // predicción: true
+        
+        System.out.println(r1);
+        System.out.println(r2);
+        System.out.println(r3);
+        System.out.println(r4);
+
+    }
 
     // =========================================================================
     // BLOQUE 3 — SINTAXIS Y ESTRUCTURA (ejercicios 15 al 19)
@@ -408,18 +418,19 @@ public class EjerciciosElementosJavaMon {
     // constantes, PascalCase para clases.
     // -------------------------------------------------------------------------
     
-    //int Edad
-    //final double pi_value = 3.14
-    //String nombre_Completo = "Ana"
-    //class miclase { }         (solo como comentario, no la declares aquí)
-    //int MAX_intentos = 3
+    public static void ej17 () {
+    int Edad;
+    final double pi_value = 3.14;
+    String nombre_Completo = "Ana";
+    //class miclase { }         (solo como comentario, no la declares aquí);
+    int MAX_intentos = 3;
     
     int edad; // en camelCase 
     final double PI_VALUE = 3.14; // en UPPER_SNAKE_CASE
     String nombreCompleto = "Ana"; // en camelCase
     //class MiClase { }     en PascalCase
     final int MAX_INTENTOS = 3;
-    
+    }    
 
     // -------------------------------------------------------------------------
     // EJERCICIO 18 — Delimitadores y bloques de código
@@ -618,7 +629,5 @@ public class EjerciciosElementosJavaMon {
     // Comprueba tu análisis imprimiendo el resultado para a=3, b=4 (debe dar 5.0)
     // y para a=1, b=1 (debe dar 1.41).
     // -------------------------------------------------------------------------
-
-    }  // end of main
 
 } // end of class
