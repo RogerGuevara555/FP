@@ -1,0 +1,21 @@
+Respuestas:
+
+1. La fórmula asociada es [DxC - A + B] / C
+2. El resultado mostrado en pantalla es 13/4 o 4,33333...
+3. El estado en la memoria es:
+
+registros->valor
+11->1
+12->2
+13->4,333...
+·
+·
+·
+17->3
+·
+·
+·
+28->4
+
+4. Su valor actual es 279
+5. Esta arquitectura tiene 4 registros de propósito general (RX).
