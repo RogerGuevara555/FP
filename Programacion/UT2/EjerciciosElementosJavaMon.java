@@ -18,7 +18,7 @@
 public class EjerciciosElementosJavaMon {
 
     public static void main(String[] args) {
-    
+        ej1();
     }
        // =========================================================================
     // BLOQUE 1 — VARIABLES Y TIPOS DE DATOS (ejercicios 01 al 07)
