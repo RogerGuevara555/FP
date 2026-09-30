@@ -1,0 +1,26 @@
+inicio algoritmo pasoPeatonal
+  pulsador("PULSE")
+  semáforo("VERDE")
+  peatón("ROJO")
+
+  mientras(true)
+    si (boto pulsado())
+      entonces
+      pulsador("ESPERE")
+      esperar(10)
+
+      semáforo("AMBAR")
+      esperar(5)
+
+      semáforo("ROJO")
+      peatón("VERDE")
+      esperar(10)
+
+      peatón("FLASH")
+      esperar(5)
+
+      pulsador("PULSE")
+      semáforo("VERDE")
+      peatón("ROJO")
+
+fin algoritmo

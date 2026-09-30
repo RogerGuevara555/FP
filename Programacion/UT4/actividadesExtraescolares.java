@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
-public class ejerciciosConCondicionales {
+public class actividadesExtraescolares {
     public static void main (String args[]) {
+        System.out.print("Introduce el dia: ");
         Scanner sc = new Scanner(System.in);
         String dia = sc.nextLine();
 
