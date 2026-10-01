@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class ejsSet1 {
     public static void main(String[] args) {
@@ -9,7 +10,7 @@ public class ejsSet1 {
         //ej214();
         //ej215();
         //ej216();
-        ej217();
+        //ej217();
         ej218();
     }
 
@@ -161,18 +162,85 @@ public class ejsSet1 {
 
 
     static void ej217 () {
-        // Descuento
+        // Adivinar numero
+        Random rn = new Random();
         Scanner sc = new Scanner(System.in);
+        int numero = rn.nextInt(100) + 1; // numero entre 1 y 100
+
+        System.out.println("Adivina el número entre 1 y 100");
+        while (true) {
+            int intento = sc.nextInt();
+            if (intento == numero) {
+                System.out.println("Felicidades, haas adivinado el número");
+                break;
+            }
+            if (intento < numero)
+                System.out.println("El número es mayor que eso");
+            if (intento > numero)
+                System.out.println("El número es menor que eso");
+        }
 
         sc.close();
     }
 
 
     static void ej218 () {
-        // Descuento
+        // Adivinar numero a la menos uno
+        Random rn = new Random();
         Scanner sc = new Scanner(System.in);
+        int intento = 50;
+        int iteracion = 1;
+        boolean adivinado = false;
+        int cotaSuperior = 100;
+        int cotaInferior = 0;
+
+        System.out.println("Piensa en un número entre 1 y 100, me dirás si es >, < o = que mi intento");
+        while (!adivinado) {
+            System.out.println(intento+"?");
+            String respuesta = sc.nextLine();
+
+            double acotado = 50 / Math.pow(2, iteracion);
+            if (acotado < 1) acotado = 1;
+
+            switch (respuesta) {
+                case ">":
+                    cotaInferior = intento;
+                    intento += (int) acotado;
+                    break;
+                case "<":
+                    cotaSuperior = intento;
+                    intento -= (int) acotado;
+                    break;
+                case "=":
+                    System.out.println(":)");
+                    adivinado = true;
+                    break;
+            }
+            iteracion++;
+
+            int probabilidadSalto = rn.nextInt(5);
+            int numeroRandom = rn.ints(cotaInferior, cotaSuperior+1);
+            if (probabilidadSalto == 0) {
+                intento = numeroRandom;
+                iteracion = 1;
+                continue;
+            }   
+
+        }
 
         sc.close();
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
