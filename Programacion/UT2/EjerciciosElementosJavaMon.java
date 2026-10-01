@@ -78,10 +78,10 @@ public class EjerciciosElementosJavaMon {
         final double PI = 3.141592653589793;
         final int MESES_DEL_ANO = 12;
         final int VELOCIDAD_LIMITE = 120;
-        final int MESES_DEL_AÑO = 13; //las constantes no pueden ser reasignadas
+        //final int MESES_DEL_ANO = 13; las constantes no pueden ser reasignadas
 
         System.out.println(PI);
-        System.out.println(MESES_DEL_AÑO);
+        System.out.println(MESES_DEL_ANO);
         System.out.println(VELOCIDAD_LIMITE);
     }
 
@@ -419,17 +419,17 @@ public class EjerciciosElementosJavaMon {
     // -------------------------------------------------------------------------
     
     public static void ej17 () {
-    int Edad;
-    final double pi_value = 3.14;
-    String nombre_Completo = "Ana";
-    //class miclase { }         (solo como comentario, no la declares aquí);
-    int MAX_intentos = 3;
-    
-    int edad; // en camelCase 
-    final double PI_VALUE = 3.14; // en UPPER_SNAKE_CASE
-    String nombreCompleto = "Ana"; // en camelCase
-    //class MiClase { }     en PascalCase
-    final int MAX_INTENTOS = 3;
+        int Edad;
+        final double pi_value = 3.14;
+        String nombre_Completo = "Ana";
+        //class miclase { }         (solo como comentario, no la declares aquí);
+        int MAX_intentos = 3;
+        
+        int edad; // en camelCase 
+        final double PI_VALUE = 3.14; // en UPPER_SNAKE_CASE
+        String nombreCompleto = "Ana"; // en camelCase
+        //class MiClase { }     en PascalCase
+        final int MAX_INTENTOS = 3;
     }    
 
     // -------------------------------------------------------------------------

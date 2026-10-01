@@ -15,5 +15,7 @@ public class fichaAlumno {
         System.out.println("| NOMBRE COMPLETO : " + apellidos + ", " + nombre);
         System.out.println("| EDAD : " + edad);
         System.out.println("+-------------------------------");
+
+        sc.close();
     }
 }

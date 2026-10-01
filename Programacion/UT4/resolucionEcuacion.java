@@ -21,5 +21,7 @@ public class resolucionEcuacion {
             else
                 System.out.println("x_1 = " + x_1 + "\nx_2 = " + x_2);
         }
+
+        sc.close();
     }
 }

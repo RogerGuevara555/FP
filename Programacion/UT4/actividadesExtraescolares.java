@@ -22,10 +22,7 @@ public class actividadesExtraescolares {
             case "viernes":
                 System.out.println("descanso");
                 break;
-            case ("sabado"):
-                System.out.println("dia sin actividades");
-                break;
-            case "domingo":
+            case "sabado": case "domingo":
                 System.out.println("dia sin actividades");
                 break;
             default:
@@ -33,5 +30,6 @@ public class actividadesExtraescolares {
                 break;
         }
 
+        sc.close();
     }
 }
