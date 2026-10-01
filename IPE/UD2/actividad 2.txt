@@ -1,0 +1,42 @@
+Actividades de aplicación
+
+2.1. Alfonso, empleado de almacén, sufre un golpe en la cabeza al caerle una caja mal apilada desde un estante alto. ¿Qué tipo de riesgo laboral se presenta aquí?
+
+2.2. Un almacén cuenta con pasillos de solo 1 m de ancho, lo que impide el paso seguro de carretillas y personas trabajadoras simultáneamente. ¿Cuáles deben ser las dimensiones mínimas de los pasillos en este caso?
+
+2.3. Una escalera interna en una fábrica tiene peldaños muy estrechos y una inclinación pronunciada, lo que provoca frecuentes tropiezos. ¿Qué requisitos debe cumplir la escalera?
+
+2.4. En una fábrica, los aseos carecen de espejos y las toallas para secarse son compartidas entre las personas trabajadoras. ¿Qué medidas deberían implementarse para cumplir con las condiciones adecuadas?
+
+2.5. En una oficina, un empleado en silla de ruedas no puede utilizar una fotocopiadora porque está ubicada en un área elevada y de difícil acceso. ¿Qué adaptaciones deberían realizarse para garantizar su uso por personas con discapacidad?
+
+2.6. Pedro, trabajador en una obra, manipula un cable pelado sin guantes ni herramientas aislantes, recibiendo una descarga eléctrica. ¿De qué tipo de contacto eléctrico se trata? ¿Qué medidas de protección deberían haberse aplicado?
+
+2.7. Alicia, empleada en una oficina, sufre una descarga al tocar la carcasa metálica de una fotocopiadora debido a un fallo en la conexión a tierra. ¿Qué tipo de contacto eléctrico ha ocurrido y cómo se podría prevenir?
+
+2.8. En una cocina industrial, el aceite de una freidora se incendia y un empleado intenta apagarlo con agua, provocando que las llamas se expandan. ¿A qué clase de fuego pertenece este incendio y cuál es el método adecuado para extinguirlo?
+
+2.9. En un almacén de productos químicos inflamables, solo hay detectores ópticos de humo instalados. ¿Por qué sería recomendable complementar la detección con otro tipo de sensores y cuál sería el más adecuado?
+
+2.10. En un taller de carpintería metálica, los operarios utilizan sierras sin utilizar protectores para los oídos. ¿Qué acciones se deben tomar para minimizar los riesgos de daño auditivo?
+
+2.11. En una obra de construcción, Salvador utiliza una herramienta percutora durante varias horas al día sin protección, lo que le genera molestias en las manos. ¿Qué medidas de prevención y protección deben implementarse para reducir 
+la exposición a las vibraciones?
+
+2.12. En un almacén de productos pesados, las luces son insuficientes y parpadean constantemente, lo que dificulta la visibilidad y aumenta el riesgo de accidentes. ¿Qué mejoras deberían implementarse en el sistema de iluminación para garantizar la seguridad?
+
+2.13. En un taller de diseño, la iluminación general es insuficiente y las luces directas sobre las mesas de trabajo crean sombras molestas, además de que las pantallas de los ordenadores reflejan la luz excesiva. ¿Cómo se puede ajustar la iluminación para mejorar la visibilidad sin causar fatiga visual ni accidentes?
+
+2.14. En un hospital, Silvia, técnica de radiología, trabaja sin el uso adecuado de un delantal plomado mientras realiza radiografías. ¿Qué medidas de protección deben tomarse para evitar la exposición a radiaciones ionizantes?
+
+2.15. En un taller mecánico, la temperatura es extremadamente alta debido a la maquinaria en funcionamiento y a la falta de ventilación adecuada, lo que genera incomodidad y fatiga en los empleados. ¿Qué medidas deben tomarse para regular la temperatura y garantizar un ambiente de trabajo seguro?
+
+2.16. En un taller de pintura automotriz, los operarios están expuestos a vapores de disolventes orgánicos sin protección respiratoria, lo que les causa dolores de cabeza y mareos. ¿Qué formas de los agentes químicos están presentes y qué efectos tienen en la salud de las personas trabajadoras?
+
+2.17. En una planta de alimentos, los empleados no siguen procedimientos de lavado adecuado después de manipular productos crudos, lo que aumenta el riesgo de contaminación por bacterias. ¿Qué prácticas higiénicas deben seguirse para evitar la exposición a agentes biológicos?
+
+2.18. En un hospital, el personal sanitario se enfrenta a turnos largos y una alta carga de trabajo, lo que provoca agotamiento, irritabilidad y disminución de la calidad en la atención al paciente. ¿Qué estrategias podrían implementarse para prevenir el estrés laboral en este entorno?
+
+2.19. En un entorno laboral, Marta recibe comentarios y propuestas no deseadas sobre su apariencia física por parte de Jaime, creando un ambiente incómodo. ¿A qué tipo de acoso se enfrenta esta empleada?
+
+2.20. En una fábrica, hay zonas donde los empleados están expuestos a maquinaria peligrosa, pero no hay señalización sobre el riesgo. ¿Qué tipo de señal de seguridad sería más adecuada para alertar de estos peligros?
