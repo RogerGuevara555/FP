@@ -1,5 +1,23 @@
 Respuestas 
 
-2.1 El tipo de riesgo es una condición de seguridad
+2.1 El tipo de riesgo es una condición de seguridad.
 
-2.2 
+2.2 Las dimensiones mínimas de un pasillo de este estilo deben ser de 1,2m de ancho.
+
+2.3 La escalera debe tener al menos un metro de anchura, una huella de entre 23 y 36cm y una contrahuella de entre 13 y 20cm.
+
+2.4 Todo aseo debe tener espejos, tasas con puertas y papel sanitario, y dispensadores de jabón líquido y servilletas desechables.
+
+2.5 Que la fotocopiadora esté a una altura accesible desde un asiento bajo.
+
+2.6 Se trata de un contacto directo. Deberían haberse aplicado medidas como el uso de guantes aislantes y la prevención ante cables pelados expuestos.
+
+2.7 Es un contacto eléctrico indirecto. Para prevenir esto debería tenerse un espacio de trabajo organizado, donde los cables no estén desperdigados por el suelo o entre los equipos entrando en contacto con estos.
+
+2.8 Es un fuego de clase B y debe combatirse con un extintor de clase F.
+
+2.9 Los productos químicos inflamables suelen emitir vapores y gases invisibles en lugar de humo, por lo que se debe optar por instalar detectores de vapores/gases y mantener una ventilación forzada
+
+2.10 Deben emplear protectores para oídos y verificar que el ruido no supere los 87dB.
+
+2.11 
