@@ -8,10 +8,16 @@
     <datos_personales>
       <nombre>Roger</nombre>
       <apellidos>Guevara Troche</apellidos>
+      <sexo>Masculino</sexo>
       <nacionalidad>Cubana</nacionalidad>
-      <codigoPais>ES</codigoPais>
       <!-- Estándar ISO 3166-1 alfa-2 -->
-      <domicilio>Alcobendas</domicilio>
+      <codigoPais>ES</codigoPais>
+      <domicilio>
+        <numero>6</numero>
+        <calle>Jarama</calle>
+        <codigoPostal>28100</codigoPostal>
+        <ciudad>Alcobendas</ciudad>
+      </domicilio>
       <contacto>
         <correo>rogerandres555@gmail.com</correo>
         <telefono>(+34) 614-659-509</telefono>
