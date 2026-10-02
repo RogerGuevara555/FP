@@ -1,0 +1,4 @@
+SELECT Apellido, Nombre, salario
+FROM empleados
+WHERE Jefe_ID = 7839
+ORDER BY salario DESC 

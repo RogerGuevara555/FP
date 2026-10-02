@@ -1,0 +1,3 @@
+SELECT departamento_ID, Apellido, Nombre, salario FROM empleados        
+WHERE departamento_ID IN (20, 30)
+ORDER BY departamento_ID

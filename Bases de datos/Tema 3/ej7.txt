@@ -1,0 +1,2 @@
+SELECT Nombre, Apellido, salario, departamento_ID FROM empleados        
+WHERE departamento_ID = 20 OR (departamento_ID = 30 AND salario > 1500)

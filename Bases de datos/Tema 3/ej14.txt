@@ -1,0 +1,3 @@
+SELECT departamento_ID, Apellido, Nombre, salario, comision FROM empleados        
+WHERE departamento_ID IN (20, 30) AND (comision IS NOT NULL AND comision != 0) 
+ORDER BY departamento_ID

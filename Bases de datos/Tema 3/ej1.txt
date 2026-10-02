@@ -1,3 +1,2 @@
 SELECT Nombre, Apellido, salario FROM empleados 
-WHERE salario > 1500 AND salario < 3000
-ORDER BY salario DESC 
+WHERE empleado_ID > 7600

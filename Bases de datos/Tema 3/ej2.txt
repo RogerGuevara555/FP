@@ -1,0 +1,2 @@
+SELECT  Nombre, salario FROM empleados        
+WHERE salario = 3000

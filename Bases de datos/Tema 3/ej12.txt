@@ -1,0 +1,2 @@
+SELECT departamento_ID, Apellido, Nombre, salario FROM empleados        
+ORDER BY departamento_ID, Apellido, Nombre

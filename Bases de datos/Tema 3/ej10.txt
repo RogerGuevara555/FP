@@ -1,2 +1,2 @@
 SELECT * FROM empleados        
-WHERE Nombre LIKE "Denise"
+WHERE Apellido LIKE "_E%"

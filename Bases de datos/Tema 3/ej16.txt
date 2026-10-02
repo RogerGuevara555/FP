@@ -1,0 +1,8 @@
+SELECT 
+Apellido, Nombre, 
+salario, 
+salario+salario*0.1 "Con Aumento", 
+salario-salario*0.05 "Con Descuento" 
+FROM empleados
+WHERE departamento_ID IN (13, 30)
+ORDER BY salario DESC 

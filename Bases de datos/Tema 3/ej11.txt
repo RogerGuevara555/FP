@@ -1,0 +1,2 @@
+SELECT Nombre, Apellido, salario FROM empleados        
+WHERE salario*12 < 12000

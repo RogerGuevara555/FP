@@ -1,35 +1,20 @@
 1 EJERCICIO: Consultas (sobre la BD del fichero MYSQL_empleados.sql)
 
     1. Mostrar todos los empleados cuyo empleado_id es mayor que 7600.
-
     2. Mostrar nombre y salario de los que cobran 3000 euros.
-
     3. Mostrar los datos de los empleados que se llamen Denise.
-
     4. Mostrar nombre, salario y comisión de los empleados cuyo apellido empiece por S.
-
     5. Empleados cuyo salario esté entre 2500 y 3000.
-
     6. Empleados cuyo salario no esté entre 2500 y 3000.
-
     7. Empleados del departamento 20, y a aquellos del 30 que cobren más de 1500 euros.
-
     8. Nombre y apellido de los trabajadores que no cobran comisión, ordenados alfabéticamente.
-
     9. Mostrar el nombre de los empleados cuya comisión sea superior al 30% de su salario.
-
     10. Visualiza toda la información de los empleados cuya segunda letra del apellido es una E.
-
     11. Muestra el nombre de los empleados que tienen un salario anual (sin tener en cuenta la comisión) menor a 12.000.
-
     12. Muestra los departamentos ordenados. Dentro de cada uno de ellos, ordena alfabéticamente por el apellido y nombre de los empleados.
-
     13. Muestra la información de los empleados de los departamentos 20 y 30.
-
     14. Muestra la información de todos los empleados de los departamentos 20 y 30 que cobran comisión.
-
     15. ¿Cuánto cobraría cada empleado si incrementamos su salario (sin tener en cuenta la comisión) un 20%?
-
     16. De los empleados de los departamentos 30 y 13, muestra su nombre y salario actual, lo que cobrarían si incrementamos éste un 10% y lo que cobrarían si decrementamos el salario un 5%.
 
     17. Muestra el código del departamento donde trabaja cada jefe.

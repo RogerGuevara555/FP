@@ -1,2 +1,2 @@
 SELECT Nombre, Apellido, salario, comision FROM empleados        
-WHERE Apellido LIKE "S%"
+WHERE salario BETWEEN 2500 AND 3000
