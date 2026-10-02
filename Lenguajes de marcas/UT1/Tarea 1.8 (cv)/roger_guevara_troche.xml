@@ -9,6 +9,8 @@
       <nombre>Roger</nombre>
       <apellidos>Guevara Troche</apellidos>
       <nacionalidad>Cubana</nacionalidad>
+      <codigoPais>ES</codigoPais>
+      <!-- Estándar ISO 3166-1 alfa-2 -->
       <domicilio>Alcobendas</domicilio>
       <contacto>
         <correo>rogerandres555@gmail.com</correo>
@@ -17,18 +19,18 @@
     </datos_personales>
 
     <descripcion>
-      Estudiante de informatica con gran pasion por la programacion y dispuesto a entrar un sector en constante cambio.
+      Estudiante de informática con gran pasión por la programación y dispuesto a entrar un sector en constante cambio.
     </descripcion>
 
     <experiencia_laboral>
-      <!-- Añadir cuando tenga experiancia. -->
+      <!-- Añadir cuando tenga experiencia. -->
     </experiencia_laboral>
 
     <tecnologias>
       <tecnologia nivel="avanzado">Java</tecnologia>
       <tecnologia nivel="avanzado">Python</tecnologia>
       <tecnologia nivel="intermedio">Git</tecnologia>
-      <tecnologia nivel="basico">SQLite</tecnologia>
+      <tecnologia nivel="básico">SQLite</tecnologia>
     </tecnologias>
 
     <formacion>
@@ -43,12 +45,13 @@
     </formacion>
 
     <idiomas>
-      <idioma nivel="C2">Español</idioma>
-      <idioma nivel="B1">Inglés</idioma>
+      <codigoIdioma nivel="C2">es</codigoIdioma>
+      <codigoIdioma nivel="B1">en</codigoIdioma>
+      <!-- Código ISO 639-1 -->
     </idiomas>
 
   </cvEuropass>
-
+	
 
 </curriculums>
 
