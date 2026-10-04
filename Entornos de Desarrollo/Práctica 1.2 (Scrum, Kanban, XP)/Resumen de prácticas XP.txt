@@ -1,0 +1,7 @@
+---En el Sprint trabajamos empleando prácticas XP--- 
+
+· Durante el desarrollo, se armaron pares de programadores para trabajar en el acceso al catálogo de juegos, siendo uno el que escribe el código y el otro el que lo revisa dinámicamente. 
+
+· Se establecieron test mínimos antes de escribir código, como lo fue la función test_descontar_stock_tras_venta(), que verificaba la integridad de cada stock al efectuar una venta. Por ejemplo, si del stock de "The Last of As" se compraron 2 copias de 5 que habían, han de quedar 3.
+
+· Se aplicaron decisiones de refactorización del código como el separar la lógica de descuentos en ventas y las conexiones a la base de datos en dos clases distintas, puesto que estaban entrelazadas en un mismo método.

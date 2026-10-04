@@ -1,0 +1,28 @@
+--Sprint Goal--
+ - Otorgar mediante la app comodidad a los clientes al consultar scroleando o filtrando en el catálogo de Videojuegos
+ - Permitir que el usuario pueda comprar directamente desde la app.
+
+
+--Sprint Backlog--
+Tomamos del Product Backlog una lista coherente de Historias de Usuario para poder armar un mínimo funcional entregable al finalizar el Sprint. Entre ellas:
+
+(- HU -> Tarea)
+ - Tener acceso al catálogo completo mediante la app -> Diseñar esquema de Base de Datos
+ - Poder filtrar los juegos por géneros/plataforma -> Programar consultas especificables mediante opciones de filtrado
+ - Llevar un registro automático de cada venta -> Actualizar en tiempo real la base de datos del catálogo con sentencias DML y registrar cada transacción.
+
+
+--Daily Meeting--
+Cada día el equipo de desarrollo expuso lo que hizo el día anterior, lo que fue a hacer ese día y si algún evento impedía su avance.
+
+Día 1
+-David: "Ayer comencé con los test mínimos para actualizar el catálogo tras una venta, hoy implementaré dicha funcionalidad en un método. Por el momento no tengo ningún percance."
+
+-Braujos: "Hoy terminaré la interfaz de filtrado del catálogo que comencé ayer. He de decir que mi pc ha estado teniendo algunos problemas de conexión al repositorio del proyecto, por lo que no he podido subir mis cambios ni llevar un registro de mi actividad."
+
+Día 2
+- David: "Hoy espero terminar el método de actualización, ayer tuve algunos problemas con su implementación ya que la API que estamos empleando no está bien documentada."
+
+- Braujos: "Ayer logré terminar la interfaz y he solucionado el problema de red que tenía, por lo que nada debería obstaculizar lo que haré hoy que será la presentación y el estilo del catálogo en general."
+
+
