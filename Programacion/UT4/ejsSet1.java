@@ -186,51 +186,42 @@ public class ejsSet1 {
 
     static void ej218 () {
         // Adivinar numero a la menos uno
-        Random rn = new Random();
         Scanner sc = new Scanner(System.in);
-        int intento = 50;
-        int iteracion = 1;
+        Random rn = new Random();
         boolean adivinado = false;
+        int iteracion = 1;
         int cotaSuperior = 100;
-        int cotaInferior = 0;
+        int cotaInferior = 1;
+        int intento = rn.nextInt(100)+1;
+        int probabilidadSalto = 0; // da igual este valor ahora
 
-        System.out.println("Piensa en un número entre 1 y 100, me dirás si es >, < o = que mi intento");
+        System.out.println("Piensa en un número entre 1 y 100. \nDime si es mayor (>), menor (<) o igual (=) que mi intento");
         while (!adivinado) {
             System.out.println(intento+"?");
             String respuesta = sc.nextLine();
 
-            double acotado = 50 / Math.pow(2, iteracion);
-            if (acotado < 1) acotado = 1;
-
             switch (respuesta) {
-                case ">":
-                    cotaInferior = intento;
-                    intento += (int) acotado;
-                    break;
-                case "<":
-                    cotaSuperior = intento;
-                    intento -= (int) acotado;
-                    break;
+                case ">": cotaInferior = intento; break;
+                case "<": cotaSuperior = intento; break;
                 case "=":
-                    System.out.println(":)");
+                    System.out.println("Lo logré en "+iteracion+" intentos :)");
                     adivinado = true;
                     break;
-            }
-            iteracion++;
-
-            int probabilidadSalto = rn.nextInt(5);
-            int numeroRandom = rn.ints(cotaInferior, cotaSuperior+1);
-            if (probabilidadSalto == 0) {
+                } iteracion++;
+            
+            intento = (cotaSuperior + cotaInferior) / 2;
+                
+            probabilidadSalto = rn.nextInt(5);
+            if (probabilidadSalto == 0 && cotaSuperior-cotaInferior > 3) {
+                int numeroRandom = rn.nextInt((cotaSuperior-1) - (cotaInferior+1)) + cotaInferior;
                 intento = numeroRandom;
-                iteracion = 1;
+                System.out.println("Salto random");
                 continue;
             }   
-
         }
 
         sc.close();
     }
-
 }
 
 
