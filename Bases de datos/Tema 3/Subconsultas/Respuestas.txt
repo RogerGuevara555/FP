@@ -1,0 +1,57 @@
+Respuestas:
+
+1.
+SELECT trabajo_ID, Nombre, Apellido FROM empleados
+WHERE trabajo_ID IN (
+SELECT trabajo_ID from empleados
+WHERE Nombre = "LESLIE"
+);
+
+2.
+SELECT salario, Nombre, Apellido FROM empleados
+WHERE salario > (
+SELECT salario from empleados
+WHERE Nombre = "LESLIE" AND Apellido = "BAKER"
+)
+ORDER BY salario DESC  
+
+3.
+SELECT salario, Nombre, Apellido FROM empleados
+WHERE salario > (
+SELECT MIN(salario) from empleados
+WHERE departamento_ID = 20
+)
+ORDER BY salario DESC
+
+4.
+SELECT salario, Nombre, Apellido FROM empleados
+WHERE salario > (
+SELECT MAX(salario) from empleados
+WHERE departamento_ID = 23
+)
+ORDER BY salario DESC  
+
+5.
+SELECT Nombre, salario, departamento_ID FROM empleados
+WHERE salario NOT IN (
+SELECT salario FROM empleados
+WHERE departamento_ID = 23
+)
+
+6.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
