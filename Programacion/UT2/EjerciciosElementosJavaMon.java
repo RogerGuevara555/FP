@@ -19,8 +19,16 @@ public class EjerciciosElementosJavaMon {
 
     public static void main(String[] args) {
         ej1();
+        ej2();
+        ej9();
+        ej10();
+        ej11();
+        ej14();
+        ej17();
+        ej20();
+        ej21();
     }
-       // =========================================================================
+    // =========================================================================
     // BLOQUE 1 — VARIABLES Y TIPOS DE DATOS (ejercicios 01 al 07)
     // =========================================================================
 
@@ -487,21 +495,21 @@ public class EjerciciosElementosJavaMon {
     // sumar un int y un double? Usa getClass() o razona con un comentario.
     // -------------------------------------------------------------------------
 
-    byte num = 42;
-    short num2 = num;
-    int num3 = num2;
-    long num4 = num3;
-    float num5 = num4;
-    double num6 = num5;
+    public static void ej20 () {
+        byte num = 42;
+        short num2 = num;
+        int num3 = num2;
+        long num4 = num3;
+        float num5 = num4;
+        double num6 = num5;
 
-    
-    /*
-    System.out.println(num2);
-    System.out.println(num3);
-    System.out.println(num4);
-    System.out.println(num5);
-    System.out.println(num6);
-    */
+        System.out.println(num2);
+        System.out.println(num3);
+        System.out.println(num4);
+        System.out.println(num5);
+        System.out.println(num6);
+    }
+
 
     // -------------------------------------------------------------------------
     // EJERCICIO 21 — Casting explícito (narrowing) y pérdida de datos
@@ -523,22 +531,24 @@ public class EjerciciosElementosJavaMon {
     // Para cada caso, escribe un comentario que explique la pérdida de datos.
     // -------------------------------------------------------------------------
 
-    double d = 9.99;
-    //System.out.println((int) d); // se trunca, (int) d = 9
+    public static void ej21 () {
+        double d = 9.99;
+        System.out.println((int) d); // se trunca, (int) d = 9
 
-    int grande = 130;
-    //System.out.println((byte) grande);
+        int grande = 130;
+        System.out.println((byte) grande);
 
-    char a1 = 'A', a2 = 'a', a3 = '0';
-    //System.out.println((int) a1); // 65
-    //System.out.println((int) a2); // 97
-    //System.out.println((int) a3); // 48
-    
-    int b1 = 65, b2 = 90, b3 = 48;
-    //System.out.println((char) b1); // A
-    //System.out.println((char) b2); // Z
-    //System.out.println((char) b3); // 0
-    
+        char a1 = 'A', a2 = 'a', a3 = '0';
+        System.out.println((int) a1); // 65
+        System.out.println((int) a2); // 97
+        System.out.println((int) a3); // 48
+
+        int b1 = 65, b2 = 90, b3 = 48;
+        System.out.println((char) b1); // A
+        System.out.println((char) b2); // Z
+        System.out.println((char) b3); // 0
+    }
+
         // -------------------------------------------------------------------------
     // EJERCICIO 22 — Conversión entre String y tipos primitivos
     // -------------------------------------------------------------------------
