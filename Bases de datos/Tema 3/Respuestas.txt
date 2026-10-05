@@ -1,3 +1,91 @@
 Respuestas
 
-ej10.txt
+
+1.
+SELECT Nombre, Apellido, salario FROM empleados 
+WHERE empleado_ID > 7600
+
+2.
+SELECT  Nombre, salario FROM empleados        
+WHERE salario = 3000
+
+3.
+SELECT * FROM empleados        
+WHERE Nombre LIKE "Denise"
+
+4.
+SELECT Nombre, Apellido, salario, comision FROM empleados        
+WHERE Apellido LIKE "S%"
+
+5.
+SELECT Nombre, Apellido, salario, comision FROM empleados        
+WHERE salario BETWEEN 2500 AND 3000
+
+6.
+SELECT Nombre, Apellido, salario, comision FROM empleados        
+WHERE salario not BETWEEN 2500 AND 3000
+
+7.
+SELECT Nombre, Apellido, salario, departamento_ID FROM empleados        
+WHERE departamento_ID = 20 OR (departamento_ID = 30 AND salario > 1500)
+
+8.
+SELECT Nombre, Apellido FROM empleados        
+WHERE comision IS NULL 
+ORDER BY Nombre, Apellido
+
+9.
+SELECT Nombre, Apellido, salario, comision FROM empleados        
+WHERE comision > salario*0.30
+
+
+10.
+SELECT * FROM empleados        
+WHERE Apellido LIKE "_E%"
+
+
+11.
+SELECT Nombre, Apellido, salario FROM empleados        
+WHERE salario*12 < 12000
+
+
+12.
+SELECT departamento_ID, Apellido, Nombre, salario FROM empleados        
+ORDER BY departamento_ID, Apellido, Nombre
+
+13.
+SELECT departamento_ID, Apellido, Nombre, salario FROM empleados        
+WHERE departamento_ID IN (20, 30)
+ORDER BY departamento_ID
+
+14.
+SELECT departamento_ID, Apellido, Nombre, salario, comision FROM empleados        
+WHERE departamento_ID IN (20, 30) AND (comision IS NOT NULL AND comision != 0) 
+ORDER BY departamento_ID
+
+15.
+SELECT Apellido, Nombre, salario, salario+salario*0.2 "conAumento" FROM empleados        
+ORDER BY salario DESC 
+
+16.
+SELECT 
+Apellido, Nombre, 
+salario, 
+salario+salario*0.1 "Con Aumento", 
+salario-salario*0.05 "Con Descuento" 
+FROM empleados
+WHERE departamento_ID IN (13, 30)
+ORDER BY salario DESC 
+
+17.
+SELECT departamento_ID, empleado_ID, Nombre "Jefes", salario FROM empleados
+WHERE empleado_ID IN (
+SELECT Jefe_ID FROM empleados
+);
+
+18.
+SELECT Apellido, Nombre, salario
+FROM empleados
+WHERE Jefe_ID = 7839
+ORDER BY salario DESC 
+

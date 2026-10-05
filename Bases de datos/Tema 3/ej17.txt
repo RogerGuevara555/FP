@@ -1,0 +1,4 @@
+SELECT departamento_ID, empleado_ID, Nombre "Jefes", salario FROM empleados
+WHERE empleado_ID IN (
+SELECT Jefe_ID FROM empleados
+);

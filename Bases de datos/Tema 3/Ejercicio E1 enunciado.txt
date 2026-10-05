@@ -16,7 +16,5 @@
     14. Muestra la información de todos los empleados de los departamentos 20 y 30 que cobran comisión.
     15. ¿Cuánto cobraría cada empleado si incrementamos su salario (sin tener en cuenta la comisión) un 20%?
     16. De los empleados de los departamentos 30 y 13, muestra su nombre y salario actual, lo que cobrarían si incrementamos éste un 10% y lo que cobrarían si decrementamos el salario un 5%.
-
     17. Muestra el código del departamento donde trabaja cada jefe.
-
     18. ¿Qué empleados tienen como jefe al empleado con código 7839?
