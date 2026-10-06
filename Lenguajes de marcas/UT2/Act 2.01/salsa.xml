@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pizzas [
+    <!ENTITY salsa "Salsa de tomate receta de la abuela">
+]>
+<pizzas>
+    <pizza>
+        <Nombre>Margarita</Nombre>
+        <ing>&salsa;</ing>
+        <ing>Queso</ing>
+    </pizza>
+    <pizza>
+        <Nombre>Peperoni</Nombre>
+        <ing>&salsa;</ing>
+        <ing>Queso</ing>
+        <ing>Peperoni</ing>
+    </pizza>
+</pizzas>

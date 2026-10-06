@@ -1,0 +1,7 @@
+Respuestas:
+
+a)La diferencia es que la entidad &salsa se sustituye por su valor declarado en el DTD.
+
+b)Es una DTD privada e interna.
+
+c)La entidad &salsa es general e interna.

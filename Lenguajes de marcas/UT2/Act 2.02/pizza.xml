@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pizzas [
+<!ENTITY salsa "Salsa de tomate receta de la abuela">
+<!ENTITY queso SYSTEM "queso.txt">
+<!ENTITY desc1 SYSTEM "descripcion1.xml">
+<!ENTITY desc2 SYSTEM "descripcion2.xml">
+]>
+<pizzas>
+    <pizza>
+        <Nombre>Margarita</Nombre>
+        <ing>&salsa;</ing>
+        <ing>&queso;</ing>
+        <texto>&desc1;</texto>
+    </pizza>
+    <pizza>
+        <Nombre>Peperoni</Nombre>
+        <ing>&salsa;</ing>
+        <ing>&queso;</ing>
+        <ing>Peperoni</ing>
+        <texto>&desc2;</texto>
+    </pizza>
+</pizzas>

@@ -1,0 +1,2 @@
+a) Las entidades externas no se muestran por algún motivo
+b) Arroja un error no se abre
