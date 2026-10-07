@@ -2,7 +2,28 @@ import java.util.Scanner;
 
 public class Utils {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Introduce un año");
+        int year = sc.nextInt();
+        System.out.println(esBisiesto(year));
+
+        System.out.println("Introduce un caracter");
+        char caracter = sc.next().charAt(0);
+        System.out.println(esVocal(caracter));
+
         precioEnvio();
+
+        System.out.println("Introduce ancho");
+        int ancho = sc.nextInt();
+        System.out.println("Introduce alto");
+        int alto = sc.nextInt();
+        recuadro(ancho,alto);
+
+        //recuadro(0,4);
+        //recuadro(5,0);
+        //recuadro(5,5);
+        //recuadro(11,5);
     }
 
     public static boolean esBisiesto (int year) {
@@ -59,18 +80,27 @@ public class Utils {
         String techo = "\n****";
         String interior1 = "\n* ";
         String interior2 = "\n* ";
-
+        String recuadroArmado = "";
+        String interiorArmado = "";
 
         if (condicionGeneral) {
             for (int i=1; i<=ancho; i++) {techo += "*";}
-            for (int i=1; i<=ancho; i++) {interior1 += i;}
             for (int i=1; i<=ancho; i++) {interior2 += " ";}
-
+            for (int i=1, j=1; i<=ancho; i++, j++) {
+                if (j == 10) j -= 10;
+                interior1 += j;
+            }
             interior1 += " *";
             interior2 += " *";
+            for (int i=1; i<alto; i++) {interiorArmado += interior2;}
 
-            if (alto == 0) {}
+            if (alto == 0) {recuadroArmado += techo;}
+            else {
+                recuadroArmado += techo + interior1 + interiorArmado + techo;
+            }
+            System.out.println(recuadroArmado);
         }
+        else System.out.println("Las dimensiones mínimas y máximas son 1x0 y 76x22 respectivamente");
     }
 }
 
