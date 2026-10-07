@@ -23,6 +23,16 @@ WHERE departamento_ID = 20
 )
 ORDER BY salario DESC
 
+//o también con
+
+SELECT salario, Nombre, Apellido FROM empleados
+WHERE salario > ANY (
+SELECT salario from empleados
+WHERE departamento_ID = 20
+)
+ORDER BY salario DESC
+
+
 4.
 SELECT salario, Nombre, Apellido FROM empleados
 WHERE salario > (
@@ -30,6 +40,16 @@ SELECT MAX(salario) from empleados
 WHERE departamento_ID = 23
 )
 ORDER BY salario DESC  
+
+//o también con 
+
+SELECT salario, Nombre, Apellido FROM empleados
+WHERE salario > ALL (
+SELECT salario from empleados
+WHERE departamento_ID = 23
+)
+ORDER BY salario DESC  
+
 
 5.
 SELECT Nombre, salario, departamento_ID FROM empleados
