@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mailbox [
+    <!ELEMENT mailbox (mail+)>
+    <!ELEMENT mail (to+, from, subject, body)>
+    <!ELEMENT to      (#PCDATA)>
+    <!ELEMENT from    (#PCDATA)>
+    <!ELEMENT subject (#PCDATA)>
+    <!ELEMENT body    (#PCDATA)>
+]>
+<mailbox>
+    <mail>
+        <to>Tove</to>
+        <from>Jani</from>
+        <subject>Reminder</subject>
+        <body>Don't forget me this weekend!</body>
+    </mail>
+    <mail>
+        <to>Jani</to>
+        <from>Tove</from>
+        <subject>Re: Reminder</subject>
+        <body>Yes, of course!</body>
+    </mail>
+    <mail>
+        <to>Tove</to>
+        <to>Jani</to>
+        <from>Roger</from>
+        <subject>Question</subject>
+        <body>Caballero, pa donde van este finde que los veo con intriga</body>
+    </mail>
+</mailbox>
