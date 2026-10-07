@@ -22,9 +22,9 @@ Respuestas
 
 2.11 Debe implementarse medidas como el uso de guantes para reducir el impacto directo de las vibraciones en las manos.
 
-2.12 Se han de instalar nuevas lámparas, preferiblemente que emitan entre 50lux y 70lux.
+2.12 Se han de instalar nuevas lámparas, preferiblemente que emitan 100lux.
 
-2.13 LA iluminación en lugares así ha de ser entre los 500 y 800 lux.
+2.13 LA iluminación en lugares así ha de ser entre los 500 y 1000 lux.
 
 2.14 Es obligatorio el uso de un delantal y gafas, ambos plomados. También debe mantener distancia respecto a los rayos X y minimizar el tiempo de exposición.
 
