@@ -58,7 +58,35 @@ SELECT salario FROM empleados
 WHERE departamento_ID = 23
 )
 
-6.
+6.RETO
+SELECT Nombre, MAX(salario) "salario", Departamento_ID FROM empleados
+GROUP BY Departamento_ID
+ORDER BY salario DESC 
+
+-- o también
+
+SELECT Nombre, salario, Departamento_ID FROM empleados
+WHERE salario = ANY (
+	SELECT MAX(salario) FROM empleados
+	GROUP BY Departamento_ID
+)
+ORDER BY salario DESC 
+
+
+7.RETO PROPIO:
+Muestra el id, nombre, y cantidad de empleados bajo el mando de cada jefe
+
+
+SELECT 
+  Jefe_ID,
+  (SELECT Nombre FROM empleados
+  WHERE empleado_ID = e.Jefe_ID) AS Jefes,
+  COUNT(*) "Trabajadores" 
+FROM empleados AS e
+WHERE Jefe_ID IS NOT NULL 
+GROUP BY	Jefes
+ORDER BY Trabajadores DESC 
+
 
 
 

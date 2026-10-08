@@ -1,0 +1,60 @@
+Respuestas 
+
+1. Salario medio
+SELECT AVG(salario) FROM empleados
+
+
+2. Salarios distintos
+SELECT COUNT(DISTINCT salario) "Rango de salarios" 
+FROM empleados
+
+
+3. Diferencia de salarios
+SELECT (MAX(salario) - MIN(salario)) "Diferencia de salarios" 
+FROM empleados
+
+
+4. AVG de comisiones
+SELECT AVG(comision) "Media de las comisiones" 
+FROM empleados
+
+
+5. AVG con todos los empleados
+sustituir los null por 0?
+
+6. Decena de departamentos
+SELECT ROUND(AVG(salario)) "AVG salario" 
+FROM empleados
+WHERE departamento_ID BETWEEN 20 AND 29
+
+
+7. Media de salarios por departamento
+SELECT ROUND(AVG(salario)) AS media FROM empleados
+GROUP BY departamento_ID
+ORDER BY media DESC 
+
+
+8. Con código
+SELECT ROUND(AVG(salario)) AS media, departamento_ID
+FROM empleados
+GROUP BY departamento_ID
+ORDER BY media DESC 
+
+
+9. Info departamentos
+SELECT 
+  departamento_ID "deptID",
+  ROUND(AVG(salario)) AS avgSalario,
+  COUNT(*) AS numEmps
+FROM empleados
+WHERE comision IS NULL OR comision = 0
+GROUP BY departamento_ID
+ORDER BY numEmps DESC 
+
+
+10. Media superior a 2000
+SELECT departamento_ID "deptID", ROUND(AVG(salario)) "media salarial" FROM empleados
+GROUP BY departamento_ID
+HAVING AVG(salario) > 2000
+ORDER BY AVG(salario) DESC 
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cv [
+  <!ELEMENT cv (nombre, categoria, idiomas, paises)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT categoria (#PCDATA)>
+  <!ELEMENT idiomas (idioma*)>
+  <!ELEMENT idioma (#PCDATA)>
+  <!ATTLIST idioma 
+    nivel (bajo | medio | alto) "medio"
+    codigo IDREF #REQUIRED>
+  <!ELEMENT paises (pais*)>
+  <!ELEMENT pais (#PCDATA)>
+  <!ATTLIST pais identificador ID #REQUIRED>
+]>
+
+<cv>
+  <nombre>Roger A. Guebara Troche</nombre>
+  <categoria>Senior</categoria>
+  <idiomas>
+    <idioma codigo="fr" nivel="bajo">Francés</idioma>
+    <idioma codigo="en">Inglés</idioma>
+    <idioma codigo="es">Español</idioma>
+  </idiomas>
+  <paises>
+    <pais identificador="fr">Francia</pais>
+    <pais identificador="en">Inglaterra</pais>
+    <pais identificador="es">España</pais>
+  </paises>
+</cv>
