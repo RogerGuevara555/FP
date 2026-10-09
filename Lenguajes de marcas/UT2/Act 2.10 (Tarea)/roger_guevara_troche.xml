@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<curriculums>
+
+
+  <cvEuropass id="cv-1">
+
+    <datos_personales>
+      <nombre>Roger</nombre>
+      <apellidos>Guevara Troche</apellidos>
+      <sexo>Masculino</sexo>
+      <nacionalidad>Cubana</nacionalidad>
+      <!-- Estándar ISO 3166-1 alfa-2 -->
+      <codigoPais>ES</codigoPais>
+      <domicilio>
+        <numero>6</numero>
+        <calle>Jarama</calle>
+        <codigoPostal>28100</codigoPostal>
+        <ciudad>Alcobendas</ciudad>
+      </domicilio>
+      <contacto>
+        <correo>rogerandres555@gmail.com</correo>
+        <telefono>(+34) 614-659-509</telefono>
+      </contacto>
+    </datos_personales>
+
+    <descripcion>
+      Estudiante de informática con gran pasión por la programación y dispuesto a entrar un sector en constante cambio.
+    </descripcion>
+
+    <experiencia_laboral>
+      <!-- Añadir cuando tenga experiencia. -->
+    </experiencia_laboral>
+
+    <tecnologias>
+      <tecnologia nivel="avanzado">Java</tecnologia>
+      <tecnologia nivel="avanzado">Python</tecnologia>
+      <tecnologia nivel="intermedio">Git</tecnologia>
+      <tecnologia nivel="básico">SQLite</tecnologia>
+    </tecnologias>
+
+    <formacion>
+      <curso inicio="2023-09" fin="2025-06">
+        <titulacion>Bachillerato</titulacion>
+        <centro>IPVCE Vladimir Ilich Lenin</centro>
+      </curso>
+      <curso inicio="2026-09" actual="true">
+        <titulacion>Grado Superior en DAM</titulacion>
+        <centro>IES Virgen de la Paz</centro>
+      </curso>
+    </formacion>
+
+    <idiomas>
+      <codigoIdioma nivel="C2">es</codigoIdioma>
+      <codigoIdioma nivel="B1">en</codigoIdioma>
+      <!-- Código ISO 639-1 -->
+    </idiomas>
+
+  </cvEuropass>
+	
+
+</curriculums>
+
+

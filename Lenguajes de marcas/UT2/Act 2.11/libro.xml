@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libro xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" 
+       xs:noNamespaceSchemaLocation="libro.xsd">
+    <titulo>El Quijote</titulo>
+    <autor nombre="Miguel de Cervantes">
+        <nacionalidad>Española</nacionalidad>
+    </autor>
+</libro>
