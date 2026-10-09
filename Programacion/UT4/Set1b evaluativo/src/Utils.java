@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Utils {
+public class   Utils {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -77,27 +77,14 @@ public class Utils {
         boolean codicionAltura = ancho > 0 && ancho < 77;
         boolean condicionAncho = alto >= 0 && alto <= 22;
         boolean condicionGeneral = (codicionAltura && condicionAncho);
-        String techo = "\n****";
-        String interior1 = "\n* ";
-        String interior2 = "\n* ";
-        String recuadroArmado = "";
-        String interiorArmado = "";
-
         if (condicionGeneral) {
-            for (int i=1; i<=ancho; i++) {techo += "*";}
-            for (int i=1; i<=ancho; i++) {interior2 += " ";}
-            for (int i=1, j=1; i<=ancho; i++, j++) {
-                if (j == 10) j -= 10;
-                interior1 += j;
-            }
-            interior1 += " *";
-            interior2 += " *";
-            for (int i=1; i<alto; i++) {interiorArmado += interior2;}
+            String techo = "\n****" + "*".repeat(ancho);
+            String interior = "\n* " + " ".repeat(ancho) + " *";
+            String recuadroArmado;
 
-            if (alto == 0) {recuadroArmado += techo;}
-            else {
-                recuadroArmado += techo + interior1 + interiorArmado + techo;
-            }
+            if (alto == 0)  recuadroArmado = techo;
+            else            recuadroArmado = techo + interior.repeat(alto) + techo;
+
             System.out.println(recuadroArmado);
         }
         else System.out.println("Las dimensiones mínimas y máximas son 1x0 y 76x22 respectivamente");
