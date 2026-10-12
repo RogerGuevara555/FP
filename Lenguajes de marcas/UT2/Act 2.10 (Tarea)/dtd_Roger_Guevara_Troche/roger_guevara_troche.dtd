@@ -1,8 +1,7 @@
-
-<!ELEMENT curriculums (cvEuropass*)>
-<!ATTLIST curriculums id ID #REQUIRED>
+<!ELEMENT curriculums (cvEuropass)*>
 
 <!ELEMENT cvEuropass (datos_personales, descripcion, experiencia_laboral, tecnologias, formacion, idiomas)>
+<!ATTLIST cvEuropass id ID #REQUIRED>
 
 	<!ELEMENT datos_personales (nombre, apellidos, sexo, nacionalidad, codigoPais, domicilio, contacto)>
 		<!ELEMENT nombre (#PCDATA)>
@@ -11,7 +10,7 @@
 		<!ELEMENT nacionalidad (#PCDATA)>
 		<!ELEMENT codigoPais (#PCDATA)>
 
-		<!ELEMENT domicilio (numero, calle, codigoPostal, ciudad)>
+		<!ELEMENT domicilio (numero?, calle?, codigoPostal?, ciudad)>
 			<!ELEMENT numero (#PCDATA)>
 			<!ELEMENT calle (#PCDATA)>
 			<!ELEMENT codigoPostal (#PCDATA)>
@@ -23,27 +22,33 @@
 
 	<!ELEMENT descripcion (#PCDATA)>
          
-	<!ELEMENT experiencia_laboral (experiecia)*>
-		<!ELEMENT experiecia (puesto, centro)>
-		<!ATTLIST experiecia inicio CDATA #REQUIRED>
-		<!ATTLIST experiecia fin CDATA #IMPLIED>
-		<!ATTLIST experiecia actual (true | false) #IMPLIED>
+	<!ELEMENT experiencia_laboral (experiencia)*>
+		<!ELEMENT experiencia (puesto, empresa)>
+		<!ATTLIST experiencia inicio CDATA #REQUIRED>
+		<!ATTLIST experiencia fin CDATA #IMPLIED>
+		<!ATTLIST experiencia actual (true | false) #IMPLIED>
 			<!ELEMENT puesto (#PCDATA)>
-			<!ELEMENT centro (#PCDATA)>
+			<!ELEMENT empresa (#PCDATA)>
 
          
 	<!ELEMENT tecnologias (tecnologia)*>
 		<!ELEMENT tecnologia (#PCDATA)>
-		<!ATTLIST tecnologia nivel (básico | intermedio | avanzado) #REQUIRED>
+		<!ATTLIST tecnologia nivel (basico | intermedio | avanzado) #REQUIRED>
 		 
-	<!ELEMENT formacion (curso)+>
-		<!ELEMENT curso (titulacion?, centro?)>
+	<!ELEMENT formacion (curso)*>
+		<!ELEMENT curso (titulacion, centro, (modalidad | tipoCentro)?)>
 		<!ATTLIST curso inicio CDATA #REQUIRED>
 		<!ATTLIST curso fin CDATA #IMPLIED>
 		<!ATTLIST curso actual (true | false) #IMPLIED>
 			<!ELEMENT titulacion (#PCDATA)>
 			<!ELEMENT centro (#PCDATA)>
+			<!ELEMENT modalidad (#PCDATA)>
+			<!ELEMENT tipoCentro (#PCDATA)>
 			
 	<!ELEMENT idiomas (codigoIdioma+)>
 		<!ELEMENT codigoIdioma (#PCDATA)>
 		<!ATTLIST codigoIdioma nivel CDATA #REQUIRED>
+
+
+
+<!ENTITY centro_ies "IES Virgen de la Paz">

@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE curriculums SYSTEM "roger_guevara_troche.dtd">
 
 <curriculums>
 
@@ -36,17 +37,19 @@
       <tecnologia nivel="avanzado">Java</tecnologia>
       <tecnologia nivel="avanzado">Python</tecnologia>
       <tecnologia nivel="intermedio">Git</tecnologia>
-      <tecnologia nivel="básico">SQLite</tecnologia>
+      <tecnologia nivel="basico">SQLite</tecnologia>
     </tecnologias>
 
     <formacion>
       <curso inicio="2023-09" fin="2025-06">
         <titulacion>Bachillerato</titulacion>
         <centro>IPVCE Vladimir Ilich Lenin</centro>
+        <tipoCentro>Becado</tipoCentro>
       </curso>
       <curso inicio="2026-09" actual="true">
         <titulacion>Grado Superior en DAM</titulacion>
-        <centro>IES Virgen de la Paz</centro>
+        <centro>&centro_ies;</centro>
+        <modalidad>Dual</modalidad>
       </curso>
     </formacion>
 
@@ -60,5 +63,3 @@
 	
 
 </curriculums>
-
-
