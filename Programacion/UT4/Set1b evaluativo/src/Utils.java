@@ -1,11 +1,15 @@
 import java.util.Scanner;
 
-public class   Utils {
+public class Utils {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Introduce un año");
+        System.out.println("Introduce un año (ej: 1992, 2024, 2020, 2038, etc...)");
         int year = sc.nextInt();
+        if (esBisiesto(year))
+            System.out.println("Es bisiesto!");
+        else
+            System.out.println("No es bisiesto");
         System.out.println(esBisiesto(year));
 
         System.out.println("Introduce un caracter");
@@ -27,7 +31,7 @@ public class   Utils {
     }
 
     public static boolean esBisiesto (int year) {
-        if (year%4 == 0 && year%100 != 0)
+        if (year%4 == 0 && year%100 != 0 || year%400 == 0)
             return true;
         return false;
     }
@@ -63,6 +67,7 @@ public class   Utils {
                     error = true;
                     break;
             }
+
         } else {
             System.out.println("Pesa más de 5kg");
             error = true;
@@ -78,7 +83,7 @@ public class   Utils {
         boolean condicionAncho = alto >= 0 && alto <= 22;
         boolean condicionGeneral = (codicionAltura && condicionAncho);
         if (condicionGeneral) {
-            String techo = "\n****" + "*".repeat(ancho);
+            String techo =  "\n****" + "*".repeat(ancho);
             String interior = "\n* " + " ".repeat(ancho) + " *";
             String recuadroArmado;
 
