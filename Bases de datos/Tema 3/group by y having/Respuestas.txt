@@ -5,7 +5,9 @@ SELECT AVG(salario) FROM empleados
 
 
 2. Salarios distintos
-SELECT COUNT(DISTINCT salario) "Rango de salarios" 
+SELECT 
+   COUNT(salario) "Muestra de salarios", 
+   COUNT(DISTINCT salario) "Rengo de salarios" 
 FROM empleados
 
 
@@ -57,4 +59,109 @@ SELECT departamento_ID "deptID", ROUND(AVG(salario)) "media salarial" FROM emple
 GROUP BY departamento_ID
 HAVING AVG(salario) > 2000
 ORDER BY AVG(salario) DESC 
+
+
+11. Departamentos con más de dos personas
+SELECT 
+  departamento_ID "deptID", 
+  ROUND(AVG(salario)) "media salarial",
+  COUNT(*) "Empleados #"
+FROM empleados
+GROUP BY departamento_ID
+HAVING COUNT(*) > 2
+ORDER BY COUNT(*) DESC 
+
+
+12. Empleados de igual salario por dept
+SELECT departamento_ID, salario, COUNT(salario) "Empleados" FROM empleados 
+GROUP BY departamento_ID, salario
+-- HAVING COUNT(salario) != 1 -- para ver solo los salarios repetidos
+
+
+13. Empleados de mismo trabajo por dept
+SELECT departamento_ID, Trabajo_ID, COUNT(*) "Empleados" FROM empleados
+GROUP BY departamento_ID, Trabajo_ID
+HAVING COUNT(*) > 1 -- Varias personas en el mismo trabajo
+
+
+14. Departamentos con comisión
+SELECT departamento_ID, COUNT(comision) "Empleados con comision" FROM empleados
+GROUP BY departamento_ID
+HAVING COUNT(comision) > 2
+
+
+15. Empleados con más de 2000
+SELECT departamento_ID, COUNT(salario) "Salario > 2000" FROM empleados
+WHERE salario > 2000
+GROUP BY departamento_ID
+
+
+16. Empleado de mayor salario
+SELECT MAX(salario) FROM empleados
+
+
+17. Empleados por departamento
+SELECT departamento_ID, COUNT(*) "Empleados" FROM empleados
+GROUP BY departamento_ID
+
+
+18. Empleados antiguos
+SELECT departamento_ID, COUNT(*) "Empleados" FROM empleados
+WHERE salario > 3000
+GROUP BY departamento_ID 
+-- No hay datos sobre las fechas de contrato
+
+
+19. Empleados que menos cobran
+SELECT departamento_ID, salario, Trabajo_ID FROM empleados
+WHERE salario < 1200
+GROUP BY departamento_ID, salario, Trabajo_ID
+-- Incluí el Trabajo_ID ya que dice "dependiendo de su función"
+
+
+20. Salario medio alto
+SELECT departamento_ID, ROUND(AVG(salario)) "Salario medio" FROM empleados
+GROUP BY departamento_ID
+HAVING AVG(salario) >= 2400
+
+
+21. Número de empleados del 13
+SELECT COUNT(*) FROM empleados 
+WHERE departamento_ID = 13 AND trabajo_ID = 670
+
+
+22. Empleados con C
+SELECT COUNT(*) FROM empleados 
+WHERE apellido LIKE "C%"
+
+
+23. Media de salarios de algunos empleados
+SELECT departamento_ID, ROUND(AVG(salario)) "Salario medio" FROM empleados
+WHERE departamento_ID != 13 AND trabajo_ID NOT IN (669, 670) 
+GROUP BY departamento_ID
+HAVING AVG(salario) > 1900
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
