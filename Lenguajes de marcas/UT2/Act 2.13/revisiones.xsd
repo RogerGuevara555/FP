@@ -1,4 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="numeros" type="xs:string" />
+    <xs:element name="sistemaSolar">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element name="cuerpo" maxOccurs="unbounded">
+            <xs:complexType>
+              <xs:choice minOccurs="1" maxOccurs="unbounded">
+                <xs:element name="planeta" type="xs:string" />
+                <xs:element name="satelite" type="xs:string" />
+                <xs:element name="asteroide" type="xs:string" />
+              </xs:choice>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
 </xs:schema>

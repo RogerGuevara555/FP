@@ -1,8 +1,16 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE numeros [
-  <!ELEMENT numeros (#PCDATA)>
+<!DOCTYPE sistemaSolar [
+  <!ELEMENT sistemaSolar (cuerpo*)>
+  <!ELEMENT cuerpo (planeta|satelite|asteroide)+>
+  <!ELEMENT planeta (#PCDATA)>
+  <!ELEMENT satelite (#PCDATA)>
+  <!ELEMENT asteroide (#PCDATA)>
 ]>
 
-<numeros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="revisiones.xsd">
-    25
-</numeros>
+<sistemaSolar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="revisiones.xsd">
+  <cuerpo>
+    <planeta>Tierra</planeta>
+    <satelite>Luna</satelite>
+    <asteroide>Ceres</asteroide>
+  </cuerpo>
+</sistemaSolar>
