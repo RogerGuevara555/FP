@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="futbol">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="jugador">
+            <xs:complexType>
+              <xs:attribute name="nombre" type="xs:NMTOKENS" use="required" />
+              <xs:attribute name="codigo" type="xs:ID" use="required" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="equipo">
+            <xs:complexType>
+              <xs:attribute name="nombre" type="xs:string" use="required" />
+              <xs:attribute name="jugadores" type="xs:IDREFS" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+</xs:schema>
